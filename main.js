@@ -7,6 +7,10 @@ function getCurrentTheme() {
   let theme = window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
+  // if theme exists override it in local storage otherwise do nothing
+  localStorage.getItem("canabery.theme")
+    ? (theme = localStorage.getItem("canabery.theme"))
+    : null;
   return theme;
 }
 
@@ -31,6 +35,7 @@ themeBtn.addEventListener("click", () => {
     theme = "dark";
   }
   audio.play();
+  localStorage.setItem("canabrey.theme", `${theme}`);
   loadTheme(theme);
 });
 

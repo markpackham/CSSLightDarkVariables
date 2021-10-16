@@ -70,16 +70,6 @@ button {
   }
 }
 
-[color-scheme="light"] {
-  --text: var(--text-light);
-  --accent1: var(--accent1-light);
-  --accent2: var(--accent2-light);
-  --accent3: var(--accent3-light);
-  --bkg1: var(--bkg1-light);
-  --bkg2: var(--bkg2-light);
-  --shadow: var(--shadow-light);
-}
-
 [color-scheme="dark"] {
   --text: var(--text-dark);
   --accent1: var(--accent1-dark);
@@ -88,6 +78,16 @@ button {
   --bkg1: var(--bkg1-dark);
   --bkg2: var(--bkg2-dark);
   --shadow: var(--shadow-dark);
+}
+
+[color-scheme="light"] {
+  --text: var(--text-light);
+  --accent1: var(--accent1-light);
+  --accent2: var(--accent2-light);
+  --accent3: var(--accent3-light);
+  --bkg1: var(--bkg1-light);
+  --bkg2: var(--bkg2-light);
+  --shadow: var(--shadow-light);
 }
 
 /* utility classes */
