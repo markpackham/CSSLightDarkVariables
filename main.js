@@ -34,6 +34,7 @@ themeBtn.addEventListener("click", () => {
     audio = document.querySelector(".theme-audio--light-off");
     theme = "dark";
   }
+  audio.currentTime = 0;
   audio.play();
   localStorage.setItem("canabrey.theme", `${theme}`);
   loadTheme(theme);
