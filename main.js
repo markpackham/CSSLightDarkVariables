@@ -8,8 +8,8 @@ function getCurrentTheme() {
     ? "dark"
     : "light";
   // if theme exists override it in local storage otherwise do nothing
-  localStorage.getItem("canabery.theme")
-    ? (theme = localStorage.getItem("canabery.theme"))
+  localStorage.getItem("canabrey.theme")
+    ? (theme = localStorage.getItem("canabrey.theme"))
     : null;
   return theme;
 }
